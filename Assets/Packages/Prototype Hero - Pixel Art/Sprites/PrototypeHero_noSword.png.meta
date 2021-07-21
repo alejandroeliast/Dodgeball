@@ -1,0 +1,3240 @@
+fileFormatVersion: 2
+guid: 0409f2fddf07780408257c186ab69681
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: PrototypeHero_noSword_0
+  - first:
+      213: 21300002
+    second: PrototypeHero_noSword_1
+  - first:
+      213: 21300004
+    second: PrototypeHero_noSword_2
+  - first:
+      213: 21300006
+    second: PrototypeHero_noSword_3
+  - first:
+      213: 21300008
+    second: PrototypeHero_noSword_4
+  - first:
+      213: 21300010
+    second: PrototypeHero_noSword_5
+  - first:
+      213: 21300012
+    second: PrototypeHero_noSword_6
+  - first:
+      213: 21300014
+    second: PrototypeHero_noSword_7
+  - first:
+      213: 21300016
+    second: PrototypeHero_noSword_8
+  - first:
+      213: 21300018
+    second: PrototypeHero_noSword_9
+  - first:
+      213: 21300020
+    second: PrototypeHero_noSword_10
+  - first:
+      213: 21300022
+    second: PrototypeHero_noSword_11
+  - first:
+      213: 21300024
+    second: PrototypeHero_noSword_12
+  - first:
+      213: 21300026
+    second: PrototypeHero_noSword_13
+  - first:
+      213: 21300028
+    second: PrototypeHero_noSword_14
+  - first:
+      213: 21300030
+    second: PrototypeHero_noSword_15
+  - first:
+      213: 21300032
+    second: PrototypeHero_noSword_16
+  - first:
+      213: 21300034
+    second: PrototypeHero_noSword_17
+  - first:
+      213: 21300036
+    second: PrototypeHero_noSword_18
+  - first:
+      213: 21300038
+    second: PrototypeHero_noSword_19
+  - first:
+      213: 21300040
+    second: PrototypeHero_noSword_20
+  - first:
+      213: 21300042
+    second: PrototypeHero_noSword_21
+  - first:
+      213: 21300044
+    second: PrototypeHero_noSword_22
+  - first:
+      213: 21300046
+    second: PrototypeHero_noSword_23
+  - first:
+      213: 21300048
+    second: PrototypeHero_noSword_24
+  - first:
+      213: 21300050
+    second: PrototypeHero_noSword_25
+  - first:
+      213: 21300052
+    second: PrototypeHero_noSword_26
+  - first:
+      213: 21300054
+    second: PrototypeHero_noSword_27
+  - first:
+      213: 21300056
+    second: PrototypeHero_noSword_28
+  - first:
+      213: 21300058
+    second: PrototypeHero_noSword_29
+  - first:
+      213: 21300060
+    second: PrototypeHero_noSword_30
+  - first:
+      213: 21300062
+    second: PrototypeHero_noSword_31
+  - first:
+      213: 21300064
+    second: PrototypeHero_noSword_32
+  - first:
+      213: 21300066
+    second: PrototypeHero_noSword_33
+  - first:
+      213: 21300068
+    second: PrototypeHero_noSword_34
+  - first:
+      213: 21300070
+    second: PrototypeHero_noSword_35
+  - first:
+      213: 21300072
+    second: PrototypeHero_noSword_36
+  - first:
+      213: 21300074
+    second: PrototypeHero_noSword_37
+  - first:
+      213: 21300076
+    second: PrototypeHero_noSword_38
+  - first:
+      213: 21300078
+    second: PrototypeHero_noSword_39
+  - first:
+      213: 21300080
+    second: PrototypeHero_noSword_40
+  - first:
+      213: 21300082
+    second: PrototypeHero_noSword_41
+  - first:
+      213: 21300084
+    second: PrototypeHero_noSword_42
+  - first:
+      213: 21300086
+    second: PrototypeHero_noSword_43
+  - first:
+      213: 21300088
+    second: PrototypeHero_noSword_44
+  - first:
+      213: 21300090
+    second: PrototypeHero_noSword_45
+  - first:
+      213: 21300092
+    second: PrototypeHero_noSword_46
+  - first:
+      213: 21300094
+    second: PrototypeHero_noSword_47
+  - first:
+      213: 21300096
+    second: PrototypeHero_noSword_48
+  - first:
+      213: 21300098
+    second: PrototypeHero_noSword_49
+  - first:
+      213: 21300100
+    second: PrototypeHero_noSword_50
+  - first:
+      213: 21300102
+    second: PrototypeHero_noSword_51
+  - first:
+      213: 21300104
+    second: PrototypeHero_noSword_52
+  - first:
+      213: 21300106
+    second: PrototypeHero_noSword_53
+  - first:
+      213: 21300108
+    second: PrototypeHero_noSword_54
+  - first:
+      213: 21300110
+    second: PrototypeHero_noSword_55
+  - first:
+      213: 21300112
+    second: PrototypeHero_noSword_56
+  - first:
+      213: 21300114
+    second: PrototypeHero_noSword_57
+  - first:
+      213: 21300116
+    second: PrototypeHero_noSword_58
+  - first:
+      213: 21300118
+    second: PrototypeHero_noSword_59
+  - first:
+      213: 21300120
+    second: PrototypeHero_noSword_60
+  - first:
+      213: 21300122
+    second: PrototypeHero_noSword_61
+  - first:
+      213: 21300124
+    second: PrototypeHero_noSword_62
+  - first:
+      213: 21300126
+    second: PrototypeHero_noSword_63
+  - first:
+      213: 21300128
+    second: PrototypeHero_noSword_64
+  - first:
+      213: 21300130
+    second: PrototypeHero_noSword_65
+  - first:
+      213: 21300132
+    second: PrototypeHero_noSword_66
+  - first:
+      213: 21300134
+    second: PrototypeHero_noSword_67
+  - first:
+      213: 21300136
+    second: PrototypeHero_noSword_68
+  - first:
+      213: 21300138
+    second: PrototypeHero_noSword_69
+  - first:
+      213: 21300140
+    second: PrototypeHero_noSword_70
+  - first:
+      213: 21300142
+    second: PrototypeHero_noSword_71
+  - first:
+      213: 21300144
+    second: PrototypeHero_noSword_72
+  - first:
+      213: 21300146
+    second: PrototypeHero_noSword_73
+  - first:
+      213: 21300148
+    second: PrototypeHero_noSword_74
+  - first:
+      213: 21300150
+    second: PrototypeHero_noSword_75
+  - first:
+      213: 21300152
+    second: PrototypeHero_noSword_76
+  - first:
+      213: 21300154
+    second: PrototypeHero_noSword_77
+  - first:
+      213: 21300156
+    second: PrototypeHero_noSword_78
+  - first:
+      213: 21300158
+    second: PrototypeHero_noSword_79
+  - first:
+      213: 21300160
+    second: PrototypeHero_noSword_80
+  - first:
+      213: 21300162
+    second: PrototypeHero_noSword_81
+  - first:
+      213: 21300164
+    second: PrototypeHero_noSword_82
+  - first:
+      213: 21300166
+    second: PrototypeHero_noSword_83
+  - first:
+      213: 21300168
+    second: PrototypeHero_noSword_84
+  - first:
+      213: 21300170
+    second: PrototypeHero_noSword_85
+  - first:
+      213: 21300172
+    second: PrototypeHero_noSword_86
+  - first:
+      213: 21300174
+    second: PrototypeHero_noSword_87
+  - first:
+      213: 21300176
+    second: PrototypeHero_noSword_88
+  - first:
+      213: 21300178
+    second: PrototypeHero_noSword_89
+  - first:
+      213: 21300180
+    second: PrototypeHero_noSword_90
+  - first:
+      213: 21300182
+    second: PrototypeHero_noSword_91
+  - first:
+      213: 21300184
+    second: PrototypeHero_noSword_92
+  - first:
+      213: 21300186
+    second: PrototypeHero_noSword_93
+  - first:
+      213: 21300188
+    second: PrototypeHero_noSword_94
+  - first:
+      213: 21300190
+    second: PrototypeHero_noSword_95
+  - first:
+      213: 21300192
+    second: PrototypeHero_noSword_96
+  - first:
+      213: 21300194
+    second: PrototypeHero_noSword_97
+  - first:
+      213: 21300196
+    second: PrototypeHero_noSword_98
+  - first:
+      213: 21300198
+    second: PrototypeHero_noSword_99
+  - first:
+      213: 21300200
+    second: PrototypeHero_noSword_100
+  - first:
+      213: 21300202
+    second: PrototypeHero_noSword_101
+  - first:
+      213: 21300204
+    second: PrototypeHero_noSword_102
+  - first:
+      213: 21300206
+    second: PrototypeHero_noSword_103
+  - first:
+      213: 21300208
+    second: PrototypeHero_noSword_104
+  - first:
+      213: 21300210
+    second: PrototypeHero_noSword_105
+  - first:
+      213: 21300212
+    second: PrototypeHero_noSword_106
+  - first:
+      213: 21300214
+    second: PrototypeHero_noSword_107
+  - first:
+      213: 21300216
+    second: PrototypeHero_noSword_108
+  - first:
+      213: 21300218
+    second: PrototypeHero_noSword_109
+  - first:
+      213: 21300220
+    second: PrototypeHero_noSword_110
+  - first:
+      213: 21300222
+    second: PrototypeHero_noSword_111
+  - first:
+      213: 21300224
+    second: PrototypeHero_noSword_112
+  - first:
+      213: 21300226
+    second: PrototypeHero_noSword_113
+  - first:
+      213: 21300228
+    second: PrototypeHero_noSword_114
+  - first:
+      213: 21300230
+    second: PrototypeHero_noSword_115
+  - first:
+      213: -7321226652901932978
+    second: PrototypeHero_noSword_0
+  - first:
+      213: 2567873620451668099
+    second: PrototypeHero_noSword_1
+  - first:
+      213: 748103952290071380
+    second: PrototypeHero_noSword_2
+  - first:
+      213: -140594209146611010
+    second: PrototypeHero_noSword_3
+  - first:
+      213: -2279667034869777798
+    second: PrototypeHero_noSword_4
+  - first:
+      213: -6250868728488195386
+    second: PrototypeHero_noSword_5
+  - first:
+      213: 3806700908579419633
+    second: PrototypeHero_noSword_6
+  - first:
+      213: -2047215007362194446
+    second: PrototypeHero_noSword_7
+  - first:
+      213: 3845309302631208113
+    second: PrototypeHero_noSword_8
+  - first:
+      213: 391125766484119710
+    second: PrototypeHero_noSword_9
+  - first:
+      213: 3584726078893841603
+    second: PrototypeHero_noSword_10
+  - first:
+      213: 6863329028419714144
+    second: PrototypeHero_noSword_11
+  - first:
+      213: 3996434294799853299
+    second: PrototypeHero_noSword_12
+  - first:
+      213: -5622110685539980846
+    second: PrototypeHero_noSword_13
+  - first:
+      213: 1771836455332646356
+    second: PrototypeHero_noSword_14
+  - first:
+      213: -2076876209885284216
+    second: PrototypeHero_noSword_15
+  - first:
+      213: -1010767559940354504
+    second: PrototypeHero_noSword_16
+  - first:
+      213: 1682237421454815568
+    second: PrototypeHero_noSword_17
+  - first:
+      213: -5412847885402579738
+    second: PrototypeHero_noSword_18
+  - first:
+      213: -6518568413278376741
+    second: PrototypeHero_noSword_19
+  - first:
+      213: 5050324223786513822
+    second: PrototypeHero_noSword_20
+  - first:
+      213: -537121014734724534
+    second: PrototypeHero_noSword_21
+  - first:
+      213: 4837950772292519233
+    second: PrototypeHero_noSword_22
+  - first:
+      213: -8406573345231264949
+    second: PrototypeHero_noSword_23
+  - first:
+      213: -3018381408896932403
+    second: PrototypeHero_noSword_24
+  - first:
+      213: -6905647060494563520
+    second: PrototypeHero_noSword_25
+  - first:
+      213: 1402849731879774138
+    second: PrototypeHero_noSword_26
+  - first:
+      213: 1476778607725183193
+    second: PrototypeHero_noSword_27
+  - first:
+      213: -8030873829792138707
+    second: PrototypeHero_noSword_28
+  - first:
+      213: -6012252004678384493
+    second: PrototypeHero_noSword_29
+  - first:
+      213: -8376186124809529756
+    second: PrototypeHero_noSword_30
+  - first:
+      213: -218824283945154824
+    second: PrototypeHero_noSword_31
+  - first:
+      213: 109694780520920802
+    second: PrototypeHero_noSword_32
+  - first:
+      213: -1645974593236846369
+    second: PrototypeHero_noSword_33
+  - first:
+      213: -666623512082542133
+    second: PrototypeHero_noSword_34
+  - first:
+      213: -3026106716396717207
+    second: PrototypeHero_noSword_35
+  - first:
+      213: 6844290817156787768
+    second: PrototypeHero_noSword_36
+  - first:
+      213: 4479138527235475160
+    second: PrototypeHero_noSword_37
+  - first:
+      213: -7542453697903165719
+    second: PrototypeHero_noSword_38
+  - first:
+      213: -8275849121659276003
+    second: PrototypeHero_noSword_39
+  - first:
+      213: 5426320491350553353
+    second: PrototypeHero_noSword_40
+  - first:
+      213: 3745320884400149836
+    second: PrototypeHero_noSword_41
+  - first:
+      213: 4052964311293464186
+    second: PrototypeHero_noSword_42
+  - first:
+      213: 8228330452183351522
+    second: PrototypeHero_noSword_43
+  - first:
+      213: -3626961133854923789
+    second: PrototypeHero_noSword_44
+  - first:
+      213: -6730387431465795100
+    second: PrototypeHero_noSword_45
+  - first:
+      213: -5671583421025802104
+    second: PrototypeHero_noSword_46
+  - first:
+      213: -7533585155991974135
+    second: PrototypeHero_noSword_47
+  - first:
+      213: 4145327860730227851
+    second: PrototypeHero_noSword_48
+  - first:
+      213: -7521416766519940260
+    second: PrototypeHero_noSword_49
+  - first:
+      213: -5300302632187450801
+    second: PrototypeHero_noSword_50
+  - first:
+      213: -1917477844225158053
+    second: PrototypeHero_noSword_51
+  - first:
+      213: -583725033846639913
+    second: PrototypeHero_noSword_52
+  - first:
+      213: -4468845565079821211
+    second: PrototypeHero_noSword_53
+  - first:
+      213: 9168291222684756659
+    second: PrototypeHero_noSword_54
+  - first:
+      213: -3916247384761074694
+    second: PrototypeHero_noSword_55
+  - first:
+      213: 391062038553062128
+    second: PrototypeHero_noSword_56
+  - first:
+      213: 8082832966930400114
+    second: PrototypeHero_noSword_57
+  - first:
+      213: 8129709884462758085
+    second: PrototypeHero_noSword_58
+  - first:
+      213: -5278098236881786382
+    second: PrototypeHero_noSword_59
+  - first:
+      213: 635647893545353793
+    second: PrototypeHero_noSword_60
+  - first:
+      213: -5207170620424530662
+    second: PrototypeHero_noSword_61
+  - first:
+      213: -8068944252692833973
+    second: PrototypeHero_noSword_62
+  - first:
+      213: 7680051038546969732
+    second: PrototypeHero_noSword_63
+  - first:
+      213: 2234574978684313220
+    second: PrototypeHero_noSword_64
+  - first:
+      213: -4064863409017858911
+    second: PrototypeHero_noSword_65
+  - first:
+      213: 274149225479547098
+    second: PrototypeHero_noSword_66
+  - first:
+      213: -1984914433109350991
+    second: PrototypeHero_noSword_67
+  - first:
+      213: 6009462784420401109
+    second: PrototypeHero_noSword_68
+  - first:
+      213: -178390769539480950
+    second: PrototypeHero_noSword_69
+  - first:
+      213: 6516584808719384750
+    second: PrototypeHero_noSword_70
+  - first:
+      213: -5522368763166416803
+    second: PrototypeHero_noSword_71
+  - first:
+      213: -1169196299118984166
+    second: PrototypeHero_noSword_72
+  - first:
+      213: -7779117381572286264
+    second: PrototypeHero_noSword_73
+  - first:
+      213: -1695649605930984748
+    second: PrototypeHero_noSword_74
+  - first:
+      213: 2615831507888225825
+    second: PrototypeHero_noSword_75
+  - first:
+      213: 7974736379277951549
+    second: PrototypeHero_noSword_76
+  - first:
+      213: -5110461374503840302
+    second: PrototypeHero_noSword_77
+  - first:
+      213: 5790614740858524697
+    second: PrototypeHero_noSword_78
+  - first:
+      213: -1653815958845840239
+    second: PrototypeHero_noSword_79
+  - first:
+      213: 2720582012685639736
+    second: PrototypeHero_noSword_80
+  - first:
+      213: 6314693523506022418
+    second: PrototypeHero_noSword_81
+  - first:
+      213: -2653340080096506967
+    second: PrototypeHero_noSword_82
+  - first:
+      213: -1987000133633125492
+    second: PrototypeHero_noSword_83
+  - first:
+      213: -6358284042713491604
+    second: PrototypeHero_noSword_84
+  - first:
+      213: 3671717765769997220
+    second: PrototypeHero_noSword_85
+  - first:
+      213: 5045950064811570321
+    second: PrototypeHero_noSword_86
+  - first:
+      213: -2024033199329018175
+    second: PrototypeHero_noSword_87
+  - first:
+      213: 6652377109183923960
+    second: PrototypeHero_noSword_88
+  - first:
+      213: 808310027510921553
+    second: PrototypeHero_noSword_89
+  - first:
+      213: -3685461109075115289
+    second: PrototypeHero_noSword_90
+  - first:
+      213: 3734078335130309153
+    second: PrototypeHero_noSword_91
+  - first:
+      213: -6592231828441767377
+    second: PrototypeHero_noSword_92
+  - first:
+      213: 5977195873449214749
+    second: PrototypeHero_noSword_93
+  - first:
+      213: 6760289710546559679
+    second: PrototypeHero_noSword_94
+  - first:
+      213: -4113909848848071998
+    second: PrototypeHero_noSword_95
+  - first:
+      213: -1144285639760603050
+    second: PrototypeHero_noSword_96
+  - first:
+      213: 5180989592604376409
+    second: PrototypeHero_noSword_97
+  - first:
+      213: -7670321238409390970
+    second: PrototypeHero_noSword_98
+  - first:
+      213: -2630711338356936996
+    second: PrototypeHero_noSword_99
+  - first:
+      213: -8295177341261452758
+    second: PrototypeHero_noSword_100
+  - first:
+      213: -3933879730574743974
+    second: PrototypeHero_noSword_101
+  - first:
+      213: -6935730800201049848
+    second: PrototypeHero_noSword_102
+  - first:
+      213: -6504667363572169858
+    second: PrototypeHero_noSword_103
+  - first:
+      213: 9017271400638390096
+    second: PrototypeHero_noSword_104
+  - first:
+      213: -2097738599141429723
+    second: PrototypeHero_noSword_105
+  - first:
+      213: -1807460092229289458
+    second: PrototypeHero_noSword_106
+  - first:
+      213: -7370225332941478368
+    second: PrototypeHero_noSword_107
+  - first:
+      213: -4507481188519597581
+    second: PrototypeHero_noSword_108
+  - first:
+      213: -2669394472096527053
+    second: PrototypeHero_noSword_109
+  - first:
+      213: 2711878204764746291
+    second: PrototypeHero_noSword_110
+  - first:
+      213: -4730554261330102559
+    second: PrototypeHero_noSword_111
+  - first:
+      213: 1136555663370957488
+    second: PrototypeHero_noSword_112
+  - first:
+      213: 1372581348996940045
+    second: PrototypeHero_noSword_113
+  - first:
+      213: -7657810047898413389
+    second: PrototypeHero_noSword_114
+  - first:
+      213: -455868859593296610
+    second: PrototypeHero_noSword_115
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4088a11627c56a90800000000000000
+      internalID: -7321226652901932978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3803e1fd37be2a320800000000000000
+      internalID: 2567873620451668099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453c05bb49cc16a00800000000000000
+      internalID: 748103952290071380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebad65acf428c0ef0800000000000000
+      internalID: -140594209146611010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a3b64f8eefc50e0800000000000000
+      internalID: -2279667034869777798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca0ddc82047049a0800000000000000
+      internalID: -6250868728488195386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5780ebe4e14d430800000000000000
+      internalID: 3806700908579419633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1120
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3e3532cc4d693e0800000000000000
+      internalID: -2047215007362194446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b496daff684d5530800000000000000
+      internalID: 3845309302631208113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90d9c5ffce8d6500800000000000000
+      internalID: 391125766484119710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccdb8540618fb130800000000000000
+      internalID: 3584726078893841603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c759b43617f3f50800000000000000
+      internalID: 6863329028419714144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6ebbd21df267730800000000000000
+      internalID: 3996434294799853299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d926746e104af1b0800000000000000
+      internalID: -5622110685539980846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd80385ed3d69810800000000000000
+      internalID: 1771836455332646356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1040
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888f35347147d23e0800000000000000
+      internalID: -2076876209885284216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e444f624809f1f0800000000000000
+      internalID: -1010767559940354504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051fead9502885710800000000000000
+      internalID: 1682237421454815568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecda57d683b1e4b0800000000000000
+      internalID: -5412847885402579738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdce572a0946985a0800000000000000
+      internalID: -6518568413278376741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95785faf1b561640800000000000000
+      internalID: 5050324223786513822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42e65b6843cb88f0800000000000000
+      internalID: -537121014734724534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1458257489ad32340800000000000000
+      internalID: 4837950772292519233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 960
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43293b151ad55b80800000000000000
+      internalID: -8406573345231264949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc52e06c91e8c16d0800000000000000
+      internalID: -3018381408896932403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047400f06963a20a0800000000000000
+      internalID: -6905647060494563520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab722f5066ce77310800000000000000
+      internalID: 1402849731879774138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d00b55c1529e7410800000000000000
+      internalID: 1476778607725183193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a324b1dca9c8090800000000000000
+      internalID: -8030873829792138707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394c301f7a0309ca0800000000000000
+      internalID: -6012252004678384493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4661c22391fc1cb80800000000000000
+      internalID: -8376186124809529756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 880
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6483f197496fcf0800000000000000
+      internalID: -218824283945154824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6f9aa52d6b58100800000000000000
+      internalID: 109694780520920802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8bcc404d25829e0800000000000000
+      internalID: -1645974593236846369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1956b927dafb6f0800000000000000
+      internalID: -666623512082542133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bffb479fb1106d0800000000000000
+      internalID: -3026106716396717207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e29105c3ecbfe50800000000000000
+      internalID: 6844290817156787768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d603af42c8192e30800000000000000
+      internalID: 4479138527235475160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee76a9c252d35790800000000000000
+      internalID: -7542453697903165719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 800
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1535c83217462d80800000000000000
+      internalID: -8275849121659276003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9037f5cacb92e4b40800000000000000
+      internalID: 5426320491350553353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45d584308d0af330800000000000000
+      internalID: 3745320884400149836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e8bfd41950f3830800000000000000
+      internalID: 4052964311293464186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e00be063f6e03270800000000000000
+      internalID: 8228330452183351522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3ed62b0127aadc0800000000000000
+      internalID: -3626961133854923789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e14aba4a4cd892a0800000000000000
+      internalID: -6730387431465795100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88823cb8dec7a41b0800000000000000
+      internalID: -5671583421025802104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 720
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f41fb1734537790800000000000000
+      internalID: -7533585155991974135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cea58f9b9278930800000000000000
+      internalID: 4145327860730227851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b69ef0d4f8e9790800000000000000
+      internalID: -7521416766519940260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a266696da8176b0800000000000000
+      internalID: -5300302632187450801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5417465f00c365e0800000000000000
+      internalID: -1917477844225158053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d27117ac2136e7f0800000000000000
+      internalID: -583725033846639913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5646651b2a87bf1c0800000000000000
+      internalID: -4468845565079821211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 640
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bae4759a405c3f70800000000000000
+      internalID: 9168291222684756659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb73c2b0c1b6a9c0800000000000000
+      internalID: -3916247384761074694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_56
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa68152ad45d6500800000000000000
+      internalID: 391062038553062128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27304bc32cdfb2070800000000000000
+      internalID: 8082832966930400114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8726e111882d070800000000000000
+      internalID: 8129709884462758085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9ab0d3e9d60c6b0800000000000000
+      internalID: -5278098236881786382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1420ff0346642d800800000000000000
+      internalID: 635647893545353793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15deb4d8e96cb7b0800000000000000
+      internalID: -5207170620424530662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_62
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 560
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4950d904f9550090800000000000000
+      internalID: -8068944252692833973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48446799ab5059a60800000000000000
+      internalID: 7680051038546969732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_64
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e54749a1ec20f10800000000000000
+      internalID: 2234574978684313220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d10d1444b697c0800000000000000
+      internalID: -4064863409017858911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_66
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad82820a449fdc300800000000000000
+      internalID: 274149225479547098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5a8f0f6da2474e0800000000000000
+      internalID: -1984914433109350991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_68
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfce4c1096e56350800000000000000
+      internalID: 6009462784420401109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_69
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82046e4a8a368df0800000000000000
+      internalID: -178390769539480950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_70
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 480
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea00d607b5f8f6a50800000000000000
+      internalID: 6516584808719384750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50a0c06eda9c53b0800000000000000
+      internalID: -5522368763166416803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14cf4e192e26cfe0800000000000000
+      internalID: -1169196299118984166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8215df4f50b0490800000000000000
+      internalID: -7779117381572286264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_74
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad3f6daa7d778e0800000000000000
+      internalID: -1695649605930984748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_75
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12eb3fba5ec4d4420800000000000000
+      internalID: 2615831507888225825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d324f382c74fbae60800000000000000
+      internalID: 7974736379277951549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_77
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5185ec47ef319b0800000000000000
+      internalID: -5110461374503840302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_78
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91453044d656c5050800000000000000
+      internalID: 5790614740858524697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1942f11d5277c09e0800000000000000
+      internalID: -1653815958845840239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_80
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830e1702de271c520800000000000000
+      internalID: 2720582012685639736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218490e8d4c42a750800000000000000
+      internalID: 6314693523506022418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_82
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab8a8151417d2bd0800000000000000
+      internalID: -2653340080096506967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_83
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83d422f7e1cc64e0800000000000000
+      internalID: -1987000133633125492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_84
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67170dc956d2c7a0800000000000000
+      internalID: -6358284042713491604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_85
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab2638badf84f230800000000000000
+      internalID: 3671717765769997220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_86
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 320
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194f37f69d0d60640800000000000000
+      internalID: 5045950064811570321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce756c678039e3e0800000000000000
+      internalID: -2024033199329018175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_88
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f609d82cbdf15c50800000000000000
+      internalID: 6652377109183923960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159bc2affa1b73b00800000000000000
+      internalID: 808310027510921553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_90
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e28f00d5ac9adcc0800000000000000
+      internalID: -3685461109075115289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1229ce8367c12d330800000000000000
+      internalID: 3734078335130309153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_92
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2264b44410b384a0800000000000000
+      internalID: -6592231828441767377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_93
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d130fd57af343f250800000000000000
+      internalID: 5977195873449214749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_94
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 240
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb22bd79caf51dd50800000000000000
+      internalID: 6760289710546559679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c20e65f9c478e6c0800000000000000
+      internalID: -4113909848848071998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_96
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6581d78f54eae10f0800000000000000
+      internalID: -1144285639760603050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_97
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dfd2c959296e740800000000000000
+      internalID: 5180989592604376409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_98
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6845977097b8d8590800000000000000
+      internalID: -7670321238409390970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_99
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde64a2d9f5dd7bd0800000000000000
+      internalID: -2630711338356936996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_100
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2aed39682c91ec80800000000000000
+      internalID: -8295177341261452758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_101
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56abf54a3d0869c0800000000000000
+      internalID: -3933879730574743974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_102
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 160
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d74495955fbf90800000000000000
+      internalID: -6935730800201049848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73443cfe77cab5a0800000000000000
+      internalID: -6504667363572169858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_104
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f17563098c32d70800000000000000
+      internalID: 9017271400638390096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_105
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eac8ebbd553e2e0800000000000000
+      internalID: -2097738599141429723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_106
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a7af85f9c9ae6e0800000000000000
+      internalID: -1807460092229289458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_107
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026207bdb13b7b990800000000000000
+      internalID: -7370225332941478368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9a88e9db53271c0800000000000000
+      internalID: -4507481188519597581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_109
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d8b45eed764fad0800000000000000
+      internalID: -2669394472096527053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_110
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332702debd682a520800000000000000
+      internalID: 2711878204764746291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_111
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e675be76f1b95eb0800000000000000
+      internalID: -4730554261330102559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_112
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b23fa6aa5bd5cf00800000000000000
+      internalID: 1136555663370957488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_113
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d010a44f6736c0310800000000000000
+      internalID: 1372581348996940045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_114
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b61991955ef9b590800000000000000
+      internalID: -7657810047898413389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrototypeHero_noSword_115
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1577cfffad6ca9f0800000000000000
+      internalID: -455868859593296610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bd7e38733f67f1d48a1b77dd337c8077
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
