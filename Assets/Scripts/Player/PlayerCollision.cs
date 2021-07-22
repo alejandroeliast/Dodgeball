@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,23 +7,35 @@ namespace Player
 {
     public class PlayerCollision : MonoBehaviour
     {
+        // Main Player Script reference
         [SerializeField] Player _player;
 
-        [SerializeField] float groundCheckRadius;
-        [SerializeField] Transform groundCheck;
-        [SerializeField] LayerMask whatIsGround;
+        // Ground Check
+        [Header("Ground Check")]
+        [SerializeField] float _groundCheckRadius;
+        [SerializeField] Transform _groundCheck;
+        [SerializeField] LayerMask _whatIsGround;
+        public bool IsGrounded { get; private set; }
 
+        // Wall Check
+        [Header("Wall Check")]
+        [SerializeField] Vector2 _wallCheckSize;
+        [SerializeField] Transform _wallCheck;
+        [SerializeField] LayerMask _whatIsWall;
+        public bool IsTouchingWall { get; private set; }
+
+        // Grab Check
+        [Header("Grab Check")]
         [SerializeField] Transform _grabJoint;
         [SerializeField] ArrowFollow _selectArrow;
-
         [SerializeField] LayerMask _closestLayerMask;
-        HashSet<Collider2D> _closestColliders = new HashSet<Collider2D>();
+
         float _closestDistance = 99999f;
         Transform _closest = null;
+        HashSet<Collider2D> _closestColliders = new HashSet<Collider2D>();
+
         public Transform Closest => _closest;
 
-
-        public bool IsGrounded { get; private set; }
         private void Start()
         {
             _player = GetComponent<Player>();
@@ -50,20 +63,27 @@ namespace Player
 
         private void FixedUpdate()
         {
-            CheckSurroundings();
+            CheckGrounded();
+            CheckTouchingWall();
             GetClosestBall();
             MarkClosestBall();
         }
 
-        private void CheckSurroundings()
+        private void CheckGrounded()
         {
-            IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+            IsGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _whatIsGround);
             _player.Animator.SetBool("Grounded", IsGrounded);
+        }
+
+        private void CheckTouchingWall()
+        {
+            IsTouchingWall = Physics2D.OverlapBox(_wallCheck.position, _wallCheckSize, 0f, _whatIsWall);
+            _player.Animator.SetBool("TouchingWall", IsTouchingWall);
         }
 
         private void GetClosestBall()
         {
-            var hitArray = Physics2D.CircleCastAll(_grabJoint.position, 0.8f, Vector3.forward, 0f, _closestLayerMask/*LayerMask.GetMask("BallPassive")*/);    
+            var hitArray = Physics2D.CircleCastAll(_grabJoint.position, 0.8f, Vector3.forward, 0f, _closestLayerMask/*LayerMask.GetMask("BallPassive")*/);
 
             if (_closestColliders.Count > 0)
                 _closestColliders.Clear();
@@ -120,7 +140,8 @@ namespace Player
 
         private void OnDrawGizmos()
         {
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
+            Gizmos.DrawWireCube(_wallCheck.position, _wallCheckSize);
         }
     }
 }

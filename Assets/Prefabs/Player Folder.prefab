@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &488292371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488292372}
+  m_Layer: 3
+  m_Name: Wall Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488292372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488292371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8928296913991842226}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3359153149743493573
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8928296913991842226}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8928296913991842231
 GameObject:
@@ -458,6 +488,7 @@ Transform:
   m_Children:
   - {fileID: 8928296913630211543}
   - {fileID: 8928296914547588176}
+  - {fileID: 488292372}
   - {fileID: 8928296914943433704}
   - {fileID: 8928296914374622492}
   - {fileID: 8928296913824001205}
@@ -481,7 +512,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0e19461b1979ee34cb23a1a5266ad601, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -544,14 +575,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e723c6a9a0b124da04cd76bde84967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 8928296913991842191}
   _moveSpeed: 8
+  _acceleration: 10
+  _breaking: 10
+  _airAcceleration: 5
+  _airBreaking: 0
   _jumpForce: 10
   _maxJumps: 1
-  _downPull: 5
+  _downPull: 4
+  _wallJumpForce: {x: 10, y: 10}
+  _wallSlideSpeed: 1
   _dashTime: 0.15
   _dashSpeed: 15
   _dashCooldown: 0
-  _player: {fileID: 8928296913991842191}
 --- !u!114 &8928296913991842224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,9 +602,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 8928296913991842191}
-  groundCheckRadius: 0.1
-  groundCheck: {fileID: 8928296914547588176}
-  whatIsGround:
+  _groundCheckRadius: 0.1
+  _groundCheck: {fileID: 8928296914547588176}
+  _whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  _wallCheckSize: {x: 0.2, y: 1.25}
+  _wallCheck: {fileID: 488292372}
+  _whatIsWall:
     serializedVersion: 2
     m_Bits: 64
   _grabJoint: {fileID: 8928296914374622492}
@@ -621,7 +663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8928296913991842226}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8928296914547588179
 GameObject:
@@ -764,7 +806,7 @@ Transform:
   m_Children:
   - {fileID: 8928296914751837093}
   m_Father: {fileID: 8928296913991842226}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8928296914943433707
 GameObject:
@@ -794,5 +836,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8928296913991842226}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

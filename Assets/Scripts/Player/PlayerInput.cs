@@ -27,7 +27,7 @@ namespace Player
         public void OnJumpInput(InputAction.CallbackContext context)
         {
             if (context.performed)
-                _player.Movement.Jump();
+                _player.Movement.CheckJump();
         }
 
         public void OnThrowInput(InputAction.CallbackContext context)

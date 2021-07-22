@@ -7,23 +7,37 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         #region Variables
+        // References
+        [SerializeField] Player _player;
+        Rigidbody2D _rigidbody2D;
+
         // Horizontal
         [Header("Horizontal Movement")]
         [SerializeField] float _moveSpeed;
+        [SerializeField] float _acceleration;
+        [SerializeField] float _breaking;
+        [SerializeField] float _airAcceleration;
+        [SerializeField] float _airBreaking;
 
         Vector2 _movementVector;
 
         // Jump
-        [Header("Jumping")]
+        [Header("Jump")]
         [SerializeField] float _jumpForce;
         [SerializeField] int _maxJumps = 1;
         [SerializeField] float _downPull = 5f;
+        [SerializeField] Vector2 _wallJumpForce;
 
         int _jumpsRemaining;
         float _jumpTimer;
         float _fallTimer;
 
+        // Wall Slide
+        [Header("Wall Slide")]
+        [SerializeField] float _wallSlideSpeed;
+
         // Dash
+        [Header("Dash")]
         [SerializeField] float _dashTime;
         [SerializeField] float _dashSpeed;
         [SerializeField] float _dashCooldown;
@@ -37,12 +51,10 @@ namespace Player
 
         // State Variables
         bool _isRunning = false;
+        bool _isWallSliding = false;
         bool _isCrouched = false;
         bool _isDashing;
-
-        // References
-        [SerializeField] Player _player;
-        Rigidbody2D _rigidbody2D;
+        private bool _isWallJumping;
         #endregion
 
         void Start()
@@ -69,6 +81,7 @@ namespace Player
         {
             CheckHorizontalMovement();
             CheckVerticalMovement();
+            CheckWallSlide();
             CheckDash();
         }
 
@@ -94,7 +107,20 @@ namespace Player
         }
         private void HorizontalMoveStart()
         {
-            _rigidbody2D.velocity = new Vector2(_movementVector.x * _moveSpeed, _rigidbody2D.velocity.y);
+            float smoothnessMultiplier = _movementVector.x == 0 ? _breaking : _acceleration;
+            if (_player.Collision.IsGrounded == false)
+            {
+                smoothnessMultiplier = _movementVector.x == 0 ? _airBreaking : _airAcceleration;
+            }
+
+            float newHorizontal = Mathf.Lerp(
+                _rigidbody2D.velocity.x,
+                _movementVector.x * _moveSpeed,
+                Time.deltaTime * smoothnessMultiplier);
+
+            _rigidbody2D.velocity = new Vector2(newHorizontal, _rigidbody2D.velocity.y);
+
+            //_rigidbody2D.velocity = new Vector2(_movementVector.x * _moveSpeed, _rigidbody2D.velocity.y);
 
             if (_isRunning)
                 return;
@@ -125,12 +151,16 @@ namespace Player
                 {
                     _fallTimer = 0;
                     _jumpsRemaining = _maxJumps;
+                    _isWallJumping = false;
                 }
                 if (_player.Animator.GetFloat("Vertical") <= 0)
                     _player.Animator.SetFloat("Vertical", 0);
             }
             else
             {
+                if (_isWallSliding)
+                    return;
+
                 _fallTimer += Time.deltaTime;
                 var downForce = _downPull * _fallTimer * _fallTimer;
                 _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y - downForce);
@@ -141,22 +171,94 @@ namespace Player
         #endregion
 
         #region Jump
-        public void Jump()
+        public void CheckJump()
         {
             if (ShouldJump())
             {
-                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
-                _jumpsRemaining--;
-                _fallTimer = 0;
-                _jumpTimer = 0;
+                if (!_isWallSliding)
+                {
+                    _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
+                    _jumpsRemaining--;
+                    _fallTimer = 0;
+                    _jumpTimer = 0;
 
-                if (_isCrouched)
-                    CrouchEnd();
+                    if (_isCrouched)
+                        CrouchEnd();
+                }
             }
+
+            if (ShouldWallJump())
+            {
+                _rigidbody2D.velocity = new Vector2(-_movementVector.x * _wallJumpForce.x, _wallJumpForce.y);
+                _isWallJumping = true;
+            }
+        }
+
+        public void CancelJump()
+        {
+            _isWallJumping = false;
         }
         private bool ShouldJump()
         {
             if (!_player.Collision.IsGrounded)
+                return false;
+
+            return true;
+        }
+        private bool ShouldWallJump()
+        {
+            if (_player.Collision.IsGrounded)
+                return false;
+
+            if (!_isWallSliding)
+                return false;
+
+            return true;
+        }
+        #endregion
+
+        #region Wall Slide
+        void CheckWallSlide()
+        {
+            if (ShouldWallSlide())
+            {
+                if (!_isWallSliding)
+                    _isWallSliding = true;
+
+                if (!_isWallJumping)
+                {
+                    if (_player.Rigidbody2D.velocity.y > 0)
+                    {
+                        _player.Rigidbody2D.velocity = Vector2.zero;
+                    }
+
+                    _fallTimer = 0;
+                    _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, -_wallSlideSpeed);
+                }
+
+                if (!_player.Animator.GetBool("WallSlide"))
+                    _player.Animator.SetBool("WallSlide", true);
+            }
+            else
+            {
+                _isWallJumping = false;
+
+                if (_isWallSliding)
+                    _isWallSliding = false;
+
+                if (_player.Animator.GetBool("WallSlide"))
+                    _player.Animator.SetBool("WallSlide", false);
+            }
+        }
+        private bool ShouldWallSlide()
+        {
+            if (!_player.Collision.IsTouchingWall)
+                return false;
+
+            if (_player.Collision.IsGrounded)
+                return false;
+
+            if ((isFacingRight && _movementVector.x <= 0) || (!isFacingRight && _movementVector.x >= 0))
                 return false;
 
             return true;
