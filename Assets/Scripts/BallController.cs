@@ -65,10 +65,8 @@ public class BallController : MonoBehaviour
         isFollowing = false;
     }
 
-    public void Shoot(Vector2 mousePos, float speed)
+    public void Shoot(Vector2 direction, float speed)
     {
-        Vector2 direction = mousePos - (Vector2)transform.position;
-        direction.Normalize();
         _rigidbody2D.velocity = direction * speed;
 
         _rigidbody2D.gravityScale = 0;

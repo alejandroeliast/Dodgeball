@@ -168,6 +168,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 55baea6b-9a9f-4de6-bef8-385926914b80
     m_ActionName: Gameplay/Dash[/Keyboard/shift,/XInputControllerWindows/buttonEast]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8928296913991842190}
+        m_TargetAssemblyTypeName: Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnAimInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 31acf416-962e-40ef-a553-52691aa74a19
+    m_ActionName: Gameplay/Aim[/XInputControllerWindows/rightStick]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -562,6 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464b348ecc2c9354fa4b6cf7544e9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerType: 
   _player: {fileID: 8928296913991842191}
 --- !u!114 &8928296913991842225
 MonoBehaviour:

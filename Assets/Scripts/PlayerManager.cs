@@ -8,6 +8,11 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] List<Transform> _startingPositions = new List<Transform>();
     [SerializeField] List<GameObject> _playerList = new List<GameObject>();
 
+    private void Start()
+    {
+        _playerList.Clear();
+    }
+
     public void OnPlayerJoin()
     {
         var temp = GameObject.FindGameObjectsWithTag("Player");

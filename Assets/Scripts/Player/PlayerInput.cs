@@ -9,13 +9,15 @@ namespace Player
     {        
         float _chargeTimer;
         Vector2 _movementInput;
+        Vector2 _aimInput;
         public Player _player;
 
-        public Vector2 MovementInput => _movementInput;        
+        public Vector2 MovementInput => _movementInput;
+        public string ControllerType { get; private set; }
 
-        private void Start()
+        void Start()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<Player>();            
         }
 
         public void OnMoveInput(InputAction.CallbackContext context)
@@ -37,6 +39,7 @@ namespace Player
             else if (context.canceled)
                 _player.Action.Throw(false);
 
+            ControllerType = context.control.parent.displayName;
         }
 
         public void OnGrabInput(InputAction.CallbackContext context)
@@ -49,6 +52,12 @@ namespace Player
         {
             if (context.performed)
                 _player.Movement.Dash();
+        }
+
+        public void OnAimInput(InputAction.CallbackContext context)
+        {
+            _aimInput = context.ReadValue<Vector2>();
+            _player.Action.OnAimChanged(_aimInput);
         }
     }
 }

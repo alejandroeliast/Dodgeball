@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player
 {
@@ -15,13 +16,21 @@ namespace Player
         GameObject _childBall;
 
         [SerializeField] GameObject _reticle;
-        private bool _isThrowing;
+
+        bool _isThrowing;
         float _throwTimer = 0f;
+        Vector2 _aimVector;
 
         private void Start()
         {
             _player = GetComponent<Player>();
         }
+
+        public void OnAimChanged(Vector2 aimVector)
+        {
+            _aimVector = aimVector;
+        }
+
 
         public void Throw(bool value)
         {
@@ -59,13 +68,23 @@ namespace Player
                 return;
 
             var controller = _childBall.GetComponent<BallController>();
-            
-
-            Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
             _childBall.transform.position = _launchJoint.transform.position;
 
-            controller.Shoot(cursorInWorldPos, _ballForce * charge);
+            if (_player.Input.ControllerType == "Mouse")
+            {
+                Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);                
+
+                Vector2 direction = cursorInWorldPos - (Vector2)transform.position;
+                direction.Normalize();
+
+                controller.Shoot(direction, _ballForce * charge);
+            }
+            else
+            {
+                _aimVector.Normalize();
+                controller.Shoot(_aimVector, _ballForce * charge);
+            }
+
             controller.HoldEnd();
 
             _childBall.transform.parent = null;
@@ -109,9 +128,17 @@ namespace Player
             if (_reticle.activeSelf == false)
                 return;
 
-            var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            _reticle.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            if (_player.Input.ControllerType == "Mouse")
+            {
+                var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+                var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                _reticle.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            }
+            else
+            {
+                var angle = Mathf.Atan2(_aimVector.y, _aimVector.x) * Mathf.Rad2Deg;
+                _reticle.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            }
         }
     }
 }
