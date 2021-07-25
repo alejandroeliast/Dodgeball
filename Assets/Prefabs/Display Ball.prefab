@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1121645309028141694}
   - component: {fileID: 1121645309028141695}
   - component: {fileID: 1169018627}
-  m_Layer: 0
+  - component: {fileID: 9111726392671132850}
+  m_Layer: 8
   m_Name: Display Ball
-  m_TagString: NeutralBall
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,6 +86,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.05
   frequency: 1
+--- !u!114 &9111726392671132850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121645309028141952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa1cddd788109747b9d7a3c8ad4750c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ballType: 0
 --- !u!1 &1121645309129162810
 GameObject:
   m_ObjectHideFlags: 0
