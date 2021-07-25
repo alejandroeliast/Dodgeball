@@ -17,3 +17,9 @@ The player is able to:
 
 ### Dodgeballs
 The main weapon of a player. These can be grabbed from the ground, after they have stopped ricocheting, or from a spawner. When thrown, balls will bounce three times before slowing down or letting players pick them up. 
+
+
+### Assets Used
+Will be listing the assets I use while creating the project to give credit to these amazing creators.
+Prototype Hero - https://sventhole.itch.io/prototype-hero
+Graybox2D - https://narehop.itch.io/graybox-2d
