@@ -261,6 +261,9 @@ namespace Player
             if ((isFacingRight && _movementVector.x <= 0) || (!isFacingRight && _movementVector.x >= 0))
                 return false;
 
+            if (_player.Action.IsThrowing)
+                return false;
+
             return true;
         }
         #endregion

@@ -51,14 +51,19 @@ public class BallController : MonoBehaviour
     public void HoldStart(GameObject parent)
     {
         this.gameObject.layer = LayerMask.NameToLayer("BallHeld");
-
         _parent = parent;
+
+        if (_collider2D != null)
+            _collider2D.enabled = false;
     }
 
 
     public void HoldEnd()
     {
         this.gameObject.layer = LayerMask.NameToLayer("BallActive");
+
+        if (_collider2D != null)
+            _collider2D.enabled = true;
     }
     public void StopFollowPlayer()
     {
@@ -104,9 +109,9 @@ public class BallController : MonoBehaviour
             _rigidbody2D.velocity *= 0.5f;
             _rigidbody2D.gravityScale = 1;
 
-            gameObject.layer = LayerMask.NameToLayer("BallPassive");
-            gameObject.tag = "Ball";
             print("Player hit");
+            Destroy(gameObject);
+
         }
 
         //if (_parent == null)

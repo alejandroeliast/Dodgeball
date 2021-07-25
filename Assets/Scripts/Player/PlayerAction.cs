@@ -21,6 +21,8 @@ namespace Player
         float _throwTimer = 0f;
         Vector2 _aimVector;
 
+        public bool IsThrowing => _isThrowing;
+
         private void Start()
         {
             _player = GetComponent<Player>();
