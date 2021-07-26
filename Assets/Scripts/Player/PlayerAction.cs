@@ -26,6 +26,7 @@ namespace Player
 
         public static event Action<int, List<string>> OnBallGrabbed;
         public static event Action<int, List<string>> OnBallThrown;
+        public static event Action<int, int> OnTakeDamage;
 
         public bool IsThrowing => _isThrowing;
 
@@ -120,6 +121,18 @@ namespace Player
             Destroy(_player.Collision.Closest.gameObject);
 
             OnBallGrabbed?.Invoke(_player.Index, _ballList);
+        }
+
+        public void TakeDamage()
+        {
+            _player.Health--;
+
+            OnTakeDamage?.Invoke(_player.Index, _player.Health);
+
+            if(_player.Health <= 0)
+            {
+                print("Died");
+            }
         }
 
         private void Update()
