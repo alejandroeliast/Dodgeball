@@ -56,7 +56,6 @@
     <Compile Include="Assets\Scripts\Floating.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAction.cs" />
-    <Compile Include="Assets\Scripts\CoopSetupScreen\PlayerConfigurationManager.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\PrototypeHero.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\ColorSwap\ColorSwap_Prototype.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\Dust_DestroyEvent.cs" />
@@ -65,13 +64,14 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\ArrowFollow.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\UIPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\UI\UIPlayerInfo.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\Sensor_Prototype.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\GrabableLedge.cs" />
     <Compile Include="Assets\Scripts\BallController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\UI\UIPlayerInfoManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

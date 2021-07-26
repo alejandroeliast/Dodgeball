@@ -7,21 +7,21 @@ namespace Player
 {
     public class Player : MonoBehaviour
     {
+
         [SerializeField] PlayerInput _playerInput;
         [SerializeField] PlayerMovement _playerMovement;
         [SerializeField] PlayerCollision _playerCollision;
         [SerializeField] PlayerAction _playerAction;
-        //[SerializeField] UIPlayerInventory _playerUI;
+        public UIPlayerInfo _playerUI;
 
+        public int Index { get; set; }
         public PlayerInput Input => _playerInput;
         public PlayerMovement Movement => _playerMovement;
         public PlayerCollision Collision => _playerCollision;
         public PlayerAction Action => _playerAction;
         public Rigidbody2D Rigidbody2D { get; private set; }
         public Animator Animator { get; private set; }
-        public Collider2D Collider { get; private set; }
-
-        public  List<string> ballList;
+        public Collider2D Collider { get; private set; } 
 
         private void Awake()
         {
@@ -30,9 +30,10 @@ namespace Player
             Collider = GetComponent<Collider2D>();
         }
 
-        public void UpdateUIList()
+        private void Start()
         {
-            //_playerUI.UpdateList(ballList);
+            transform.parent.name = $"Player {Index}";
+            name = $"Player {Index}";
         }
     }
 }

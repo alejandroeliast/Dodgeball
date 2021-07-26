@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,11 @@ namespace Player
         bool _isThrowing;
         float _throwTimer = 0f;
         Vector2 _aimVector;
+
+        List<string> _ballList = new List<string>();
+
+        public static event Action<int, List<string>> OnBallGrabbed;
+        public static event Action<int, List<string>> OnBallThrown;
 
         public bool IsThrowing => _isThrowing;
 
@@ -46,14 +52,14 @@ namespace Player
 
         public void ThrowStart()
         {
-            if (_player.ballList.Count <= 0)
+            if (_ballList.Count <= 0)
                 return;
 
             if (_childBall != null)
                 return;
 
             var randomAngle = UnityEngine.Random.Range(0, 180);
-            var toSpawn = Resources.Load($"Prefabs/{_player.ballList[0]}");
+            var toSpawn = Resources.Load($"Prefabs/{_ballList[0]}");
 
             _childBall = Instantiate((GameObject)toSpawn, _handJoint.transform.position, Quaternion.Euler(0, 0, randomAngle));
 
@@ -92,12 +98,12 @@ namespace Player
             _childBall.transform.parent = null;
             _childBall = null;
 
-            _player.ballList.Remove(_player.ballList[0]);
+            _ballList.Remove(_ballList[0]);
 
             _reticle.SetActive(false);
             _player.Animator.SetBool("Throw", false);
 
-            _player.UpdateUIList();
+            OnBallThrown?.Invoke(_player.Index, _ballList);
         }
 
         public void Grab()
@@ -105,15 +111,15 @@ namespace Player
             if (_player.Collision.Closest == null)
                 return;
 
-            if (_player.ballList.Count >= 3)
+            if (_ballList.Count >= 3)
                 return;
 
             var controller = _player.Collision.Closest.gameObject.GetComponent<BallController>();
 
-            _player.ballList.Add(controller.Type.ToString());
+            _ballList.Add(controller.Type.ToString());
             Destroy(_player.Collision.Closest.gameObject);
 
-            _player.UpdateUIList();
+            OnBallGrabbed?.Invoke(_player.Index, _ballList);
         }
 
         private void Update()
