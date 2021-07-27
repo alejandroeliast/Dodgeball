@@ -109,7 +109,7 @@ public class BallController : MonoBehaviour
             _rigidbody2D.velocity *= 0.5f;
             _rigidbody2D.gravityScale = 1;
 
-            collision.collider.GetComponent<Player.Player>().Action.TakeDamage();
+            print("Player hit");
             Destroy(gameObject);
 
         }

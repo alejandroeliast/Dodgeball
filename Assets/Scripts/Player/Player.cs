@@ -15,7 +15,6 @@ namespace Player
         public UIPlayerInfo _playerUI;
 
         public int Index { get; set; }
-        public int Health { get; set; }
         public PlayerInput Input => _playerInput;
         public PlayerMovement Movement => _playerMovement;
         public PlayerCollision Collision => _playerCollision;

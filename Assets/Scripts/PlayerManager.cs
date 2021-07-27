@@ -35,12 +35,13 @@ public class PlayerManager : MonoBehaviour
         for (int i = 0; i < _playerList.Count; i++)
         {
             _texts[i].text = $"Player {i + 1} is Ready!";
+            _playerList[i].GetComponent<Player.Player>().Index = i + 1;
 
-            var player = _playerList[i].GetComponent<Player.Player>();
 
-            player.Index = i;
-            player.Health = 3;
-            player._playerUI = _playerInfoManager.PlayerInfoList[i];
+            if (i == 0)
+                _playerList[i].GetComponent<Player.Player>()._playerUI = _playerInfoManager.P1Info;
+            else if (i == 1)
+                _playerList[i].GetComponent<Player.Player>()._playerUI = _playerInfoManager.P2Info;
 
         }
 
