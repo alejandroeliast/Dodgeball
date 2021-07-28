@@ -24,14 +24,13 @@ namespace Player
         public Animator Animator { get; private set; }
         public Collider2D Collider { get; private set; } 
 
-        private void Awake()
+        void Awake()
         {
             Rigidbody2D = GetComponent<Rigidbody2D>();
             Animator = GetComponentInChildren<Animator>();
             Collider = GetComponent<Collider2D>();
         }
-
-        private void Start()
+        void Start()
         {
             transform.parent.name = $"Player {Index}";
             name = $"Player {Index}";

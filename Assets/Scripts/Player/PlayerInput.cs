@@ -1,23 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Player
 {
     public class PlayerInput : MonoBehaviour
-    {        
-        float _chargeTimer;
+    {
+        // Player Script Reference
+        Player _player;
+
+        // Movement and Aim
         Vector2 _movementInput;
         Vector2 _aimInput;
-        public Player _player;
 
         public Vector2 MovementInput => _movementInput;
         public string ControllerType { get; private set; }
 
         void Start()
         {
-            _player = GetComponent<Player>();            
+            _player = GetComponent<Player>();
         }
 
         public void OnMoveInput(InputAction.CallbackContext context)
@@ -25,13 +25,11 @@ namespace Player
             _movementInput = context.ReadValue<Vector2>();
             _player.Movement.OnMovementChanged(_movementInput);
         }
-
         public void OnJumpInput(InputAction.CallbackContext context)
         {
             if (context.performed)
                 _player.Movement.CheckJump();
         }
-
         public void OnThrowInput(InputAction.CallbackContext context)
         {
             if (context.performed)
@@ -41,19 +39,16 @@ namespace Player
 
             ControllerType = context.control.parent.displayName;
         }
-
         public void OnGrabInput(InputAction.CallbackContext context)
         {
             if (context.performed)
                 _player.Action.Grab();
         }
-
         public void OnDashInput(InputAction.CallbackContext context)
         {
             if (context.performed)
                 _player.Movement.Dash();
         }
-
         public void OnAimInput(InputAction.CallbackContext context)
         {
             _aimInput = context.ReadValue<Vector2>();

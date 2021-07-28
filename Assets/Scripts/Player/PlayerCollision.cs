@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,8 +5,9 @@ namespace Player
 {
     public class PlayerCollision : MonoBehaviour
     {
+        #region Variables
         // Main Player Script reference
-        [SerializeField] Player _player;
+        Player _player;
 
         // Ground Check
         [Header("Ground Check")]
@@ -35,13 +34,15 @@ namespace Player
         HashSet<Collider2D> _closestColliders = new HashSet<Collider2D>();
 
         public Transform Closest => _closest;
+        #endregion
 
-        private void Start()
+        void Start()
         {
             _player = GetComponent<Player>();
             _closestLayerMask = LayerMask.GetMask("BallPassive");
         }
 
+        #region Set Collider Parameters
         public void SetColliderOffset(float x, float y)
         {
             if (_player.Collider.GetType() != typeof(CapsuleCollider2D))
@@ -50,7 +51,6 @@ namespace Player
             Vector2 vec = new Vector2(x, y);
             _player.Collider.offset = vec;
         }
-
         public void SetColliderSize(float x, float y)
         {
             if (_player.Collider.GetType() != typeof(CapsuleCollider2D))
@@ -60,8 +60,9 @@ namespace Player
             CapsuleCollider2D coll = (CapsuleCollider2D)_player.Collider;
             coll.size = vec;
         }
+        #endregion
 
-        private void FixedUpdate()
+        void FixedUpdate()
         {
             CheckGrounded();
             CheckTouchingWall();
@@ -69,19 +70,21 @@ namespace Player
             MarkClosestBall();
         }
 
-        private void CheckGrounded()
+        #region Ground & Wall Check
+        void CheckGrounded()
         {
             IsGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _whatIsGround);
             _player.Animator.SetBool("Grounded", IsGrounded);
         }
-
-        private void CheckTouchingWall()
+        void CheckTouchingWall()
         {
             IsTouchingWall = Physics2D.OverlapBox(_wallCheck.position, _wallCheckSize, 0f, _whatIsWall);
             _player.Animator.SetBool("TouchingWall", IsTouchingWall);
         }
+        #endregion
 
-        private void GetClosestBall()
+        #region Closest Ball
+        void GetClosestBall()
         {
             var hitArray = Physics2D.CircleCastAll(_grabJoint.position, 0.8f, Vector3.forward, 0f, _closestLayerMask/*LayerMask.GetMask("BallPassive")*/);
 
@@ -119,8 +122,7 @@ namespace Player
 
             _closestDistance = 99999f;
         }
-
-        private void MarkClosestBall()
+        void MarkClosestBall()
         {
             if (_selectArrow == null)
                 return;
@@ -136,9 +138,9 @@ namespace Player
                 _selectArrow.gameObject.SetActive(false);
             }
         }
+        #endregion
 
-
-        private void OnDrawGizmos()
+        void OnDrawGizmos()
         {
             Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
             Gizmos.DrawWireCube(_wallCheck.position, _wallCheckSize);

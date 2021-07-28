@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Player
@@ -8,7 +6,7 @@ namespace Player
     {
         #region Variables
         // References
-        [SerializeField] Player _player;
+        Player _player;
         Rigidbody2D _rigidbody2D;
 
         // Horizontal
@@ -95,7 +93,7 @@ namespace Player
 
             _player.Animator.SetFloat("Horizontal", Mathf.Abs(_movementVector.x));
         }
-        private bool ShouldMoveHorizontally()
+        bool ShouldMoveHorizontally()
         {
             if (_isCrouched)
                 return false;
@@ -105,7 +103,7 @@ namespace Player
 
             return true;
         }
-        private void HorizontalMoveStart()
+        void HorizontalMoveStart()
         {
             float smoothnessMultiplier = _movementVector.x == 0 ? _breaking : _acceleration;
             if (_player.Collision.IsGrounded == false)
@@ -128,7 +126,7 @@ namespace Player
             _isRunning = true;
             _player.Animator.SetBool("Run", _isRunning);
         }
-        private void HorizontalMoveEnd()
+        void HorizontalMoveEnd()
         {
             _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
 
@@ -193,19 +191,18 @@ namespace Player
                 _isWallJumping = true;
             }
         }
-
         public void CancelJump()
         {
             _isWallJumping = false;
         }
-        private bool ShouldJump()
+        bool ShouldJump()
         {
             if (!_player.Collision.IsGrounded)
                 return false;
 
             return true;
         }
-        private bool ShouldWallJump()
+        bool ShouldWallJump()
         {
             if (_player.Collision.IsGrounded)
                 return false;
@@ -250,7 +247,7 @@ namespace Player
                     _player.Animator.SetBool("WallSlide", false);
             }
         }
-        private bool ShouldWallSlide()
+        bool ShouldWallSlide()
         {
             if (!_player.Collision.IsTouchingWall)
                 return false;
@@ -336,7 +333,7 @@ namespace Player
 
             return true;
         }
-        private void CheckDash()
+        void CheckDash()
         {
             if (_isDashing)
             {
@@ -357,7 +354,6 @@ namespace Player
             }
         }
         #endregion
-
 
         void CheckMovementDirection()
         {

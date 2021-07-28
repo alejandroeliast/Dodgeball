@@ -8,7 +8,8 @@ namespace Player
 {
     public class PlayerAction : MonoBehaviour
     {
-        [SerializeField] Player _player;
+        // References
+        Player _player;
 
         [SerializeField] BallController _ballPrefab;
         [SerializeField] GameObject _handJoint;
@@ -81,9 +82,10 @@ namespace Player
 
             if (_player.Input.ControllerType == "Mouse")
             {
-                Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);                
+                Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                Vector2 direction = cursorInWorldPos - (Vector2)transform.position;
+                Vector2 direction = cursorInWorldPos - (Vector2)_launchJoint.transform.position;
+
                 direction.Normalize();
 
                 controller.Shoot(direction, _ballForce * charge);
@@ -152,7 +154,12 @@ namespace Player
 
             if (_player.Input.ControllerType == "Mouse")
             {
-                var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+                //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                //Vector2 dir = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
+                
+
+                var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(_launchJoint.transform.position);
                 var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 _reticle.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
             }
