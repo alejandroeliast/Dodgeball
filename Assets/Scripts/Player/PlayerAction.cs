@@ -9,12 +9,13 @@ namespace Player
     public class PlayerAction : MonoBehaviour
     {
         // References
-        Player _player;
+        [SerializeField] Player _player;
 
         [SerializeField] BallController _ballPrefab;
         [SerializeField] GameObject _handJoint;
         [SerializeField] GameObject _launchJoint;
-        [SerializeField] float _ballForce;
+
+        GameObject _defaultPrefab;
         GameObject _childBall;
 
         [SerializeField] GameObject _reticle;
@@ -23,10 +24,10 @@ namespace Player
         float _throwTimer = 0f;
         Vector2 _aimVector;
 
-        List<string> _ballList = new List<string>();
+        public List<BallSO> _ballList = new List<BallSO>();
 
-        public static event Action<int, List<string>> OnBallGrabbed;
-        public static event Action<int, List<string>> OnBallThrown;
+        public static event Action<int, List<BallSO>> OnBallGrabbed;
+        public static event Action<int, List<BallSO>> OnBallThrown;
         public static event Action<int, int> OnTakeDamage;
 
         public bool IsThrowing => _isThrowing;
@@ -34,6 +35,7 @@ namespace Player
         private void Start()
         {
             _player = GetComponent<Player>();
+            _defaultPrefab = Resources.Load<GameObject>("Prefabs/Ball Throw");
         }
 
         public void OnAimChanged(Vector2 aimVector)
@@ -61,12 +63,12 @@ namespace Player
                 return;
 
             var randomAngle = UnityEngine.Random.Range(0, 180);
-            var toSpawn = Resources.Load($"Prefabs/{_ballList[0]}");
 
-            _childBall = Instantiate((GameObject)toSpawn, _handJoint.transform.position, Quaternion.Euler(0, 0, randomAngle));
+            _childBall = Instantiate(_defaultPrefab, _handJoint.transform.position, Quaternion.Euler(0, 0, randomAngle));
 
             var controller = _childBall.GetComponent<BallController>();
             controller.HoldStart(_handJoint);
+            controller.BallSetUp(_ballList[0]);
 
             _reticle.SetActive(true);
             _player.Animator.SetBool("Throw", true);
@@ -83,17 +85,14 @@ namespace Player
             if (_player.Input.ControllerType == "Mouse")
             {
                 Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
                 Vector2 direction = cursorInWorldPos - (Vector2)_launchJoint.transform.position;
-
                 direction.Normalize();
-
-                controller.Shoot(direction, _ballForce * charge);
+                controller.Shoot(direction, charge);
             }
             else
             {
                 _aimVector.Normalize();
-                controller.Shoot(_aimVector, _ballForce * charge);
+                controller.Shoot(_aimVector, charge);
             }
 
             controller.HoldEnd();
@@ -109,21 +108,30 @@ namespace Player
             OnBallThrown?.Invoke(_player.Index, _ballList);
         }
 
+        #region Grab
         public void Grab()
         {
+            if (ShouldGrab())
+            {
+                var ball = Resources.Load<BallSO>($"Scriptable Objects/{_player.Collision.Closest.name}");
+
+                _ballList.Add(ball);
+                Destroy(_player.Collision.Closest.gameObject);
+
+                OnBallGrabbed?.Invoke(_player.Index, _ballList);
+            }
+        }
+        bool ShouldGrab()
+        {
             if (_player.Collision.Closest == null)
-                return;
+                return false;
 
             if (_ballList.Count >= 3)
-                return;
+                return false;
 
-            var controller = _player.Collision.Closest.gameObject.GetComponent<BallController>();
-
-            _ballList.Add(controller.Type.ToString());
-            Destroy(_player.Collision.Closest.gameObject);
-
-            OnBallGrabbed?.Invoke(_player.Index, _ballList);
+            return true;
         }
+        #endregion
 
         public void TakeDamage()
         {
@@ -154,11 +162,6 @@ namespace Player
 
             if (_player.Input.ControllerType == "Mouse")
             {
-                //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-                //Vector2 dir = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
-                
-
                 var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(_launchJoint.transform.position);
                 var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 _reticle.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);

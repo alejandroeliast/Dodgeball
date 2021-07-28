@@ -45,7 +45,7 @@ public class UIPlayerInfoManager : MonoBehaviour
         _playerInfoList[index].UpdateHealth(health);
     }
 
-    private void UpdateInventory(int index, List<string> balls)
+    private void UpdateInventory(int index, List<BallSO> balls)
     {
         if (_playerInfoList[index] == null)
             return;

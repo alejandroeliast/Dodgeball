@@ -61,7 +61,7 @@ public class UIPlayerInfo : MonoBehaviour
     #endregion
 
     #region Inventory
-    public void UpdateInventory(List<string> balls)
+    public void UpdateInventory(List<BallSO> balls)
     {
         ResetInventory();
 
@@ -70,7 +70,7 @@ public class UIPlayerInfo : MonoBehaviour
             _ballSlots[0].enabled = true;
 
             for (int i = 0; i < balls.Count; i++)
-                _ballSlots[i].sprite = Resources.Load<Sprite>($"Sprites/{balls[i]}");
+                _ballSlots[i].sprite = balls[i].ballUISprite;
         }
     }
     private void ResetInventory()

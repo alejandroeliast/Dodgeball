@@ -7,7 +7,7 @@ namespace Player
     {
         #region Variables
         // Main Player Script reference
-        Player _player;
+        [SerializeField] Player _player;
 
         // Ground Check
         [Header("Ground Check")]

@@ -32,8 +32,8 @@ namespace Player
         }
         void Start()
         {
-            transform.parent.name = $"Player {Index}";
-            name = $"Player {Index}";
+            transform.parent.name = $"Player {Index + 1}";
+            name = $"Player {Index + 1}";
         }
     }
 }

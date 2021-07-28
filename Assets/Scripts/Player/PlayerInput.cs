@@ -6,7 +6,7 @@ namespace Player
     public class PlayerInput : MonoBehaviour
     {
         // Player Script Reference
-        Player _player;
+        [SerializeField] Player _player;
 
         // Movement and Aim
         Vector2 _movementInput;

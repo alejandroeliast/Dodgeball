@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class BallDispenser : MonoBehaviour
 {
-    [SerializeField] GameObject _ballPrefab;
+    [SerializeField] BallSO _ballSO;
     [SerializeField] Transform _displayJoint;
 
+    GameObject _defaultPrefab;
     GameObject _ballDisplayed;
 
     private void Start()
     {
+        _defaultPrefab = Resources.Load<GameObject>("Prefabs/Ball Display");
         SpawnBall();
     }
 
@@ -20,7 +22,11 @@ public class BallDispenser : MonoBehaviour
         if (_ballDisplayed != null)
             return;
 
-        _ballDisplayed = Instantiate(_ballPrefab, _displayJoint.position, Quaternion.identity);
+        _ballDisplayed = Instantiate(_defaultPrefab, _displayJoint.position, Quaternion.identity);
+        var controller = _ballDisplayed.GetComponent<BallController>();
+
+        if (controller != null)
+            controller.BallSetUp(_ballSO);
     }
 
     private void Update()

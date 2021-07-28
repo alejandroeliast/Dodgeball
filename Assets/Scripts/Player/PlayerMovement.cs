@@ -6,7 +6,7 @@ namespace Player
     {
         #region Variables
         // References
-        Player _player;
+        [SerializeField] Player _player;
         Rigidbody2D _rigidbody2D;
 
         // Horizontal
