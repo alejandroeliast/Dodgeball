@@ -15,7 +15,6 @@ public class BallSO : ScriptableObject
     [Header("About")]
     public int ballID;
     public string ballName;
-    public GameObject ballPrefab;
 
     [Header("Sprites")]
     public Sprite ballGameSprite;

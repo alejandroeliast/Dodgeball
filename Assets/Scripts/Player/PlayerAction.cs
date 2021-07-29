@@ -43,7 +43,7 @@ namespace Player
             _aimVector = aimVector;
         }
 
-
+        #region Throw
         public void Throw(bool value)
         {
             _isThrowing = value;
@@ -53,7 +53,6 @@ namespace Player
             else
                 ThrowEnd(Mathf.Clamp(_throwTimer, 0.4f, 1));
         }
-
         public void ThrowStart()
         {
             if (_ballList.Count <= 0)
@@ -73,7 +72,6 @@ namespace Player
             _reticle.SetActive(true);
             _player.Animator.SetBool("Throw", true);
         }
-
         public void ThrowEnd(float charge)
         {
             if (_childBall == null)
@@ -107,6 +105,7 @@ namespace Player
 
             OnBallThrown?.Invoke(_player.Index, _ballList);
         }
+        #endregion
 
         #region Grab
         public void Grab()
@@ -133,6 +132,7 @@ namespace Player
         }
         #endregion
 
+        #region Damage
         public void TakeDamage()
         {
             _player.Health--;
@@ -144,7 +144,32 @@ namespace Player
                 print("Died");
             }
         }
+        #endregion
 
+        #region Select Ball
+        public void MoveListForward()
+        {
+            if (_ballList.Count <= 1)
+                return;
+
+            BallSO temp = _ballList[0];
+            _ballList.Remove(_ballList[0]);
+            _ballList.Add(temp);
+
+            OnBallThrown?.Invoke(_player.Index, _ballList);
+        }
+        public void MoveListBackward()
+        {
+            if (_ballList.Count <= 1)
+                return;
+
+            BallSO temp = _ballList[_ballList.Count - 1];
+            _ballList.Remove(_ballList[_ballList.Count - 1]);
+            _ballList.Insert(0, temp);
+
+            OnBallThrown?.Invoke(_player.Index, _ballList);
+        }
+        #endregion
 
         private void Update()
         {

@@ -54,5 +54,19 @@ namespace Player
             _aimInput = context.ReadValue<Vector2>();
             _player.Action.OnAimChanged(_aimInput);
         }
+        public void OnSwitchLeftInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                _player.Action.MoveListBackward();
+            }
+        }
+        public void OnSwitchRightInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                _player.Action.MoveListForward();
+            }
+        }
     }
 }

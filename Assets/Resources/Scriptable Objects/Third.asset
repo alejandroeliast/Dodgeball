@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314caf2b16b11644c8c96f4dc5a5aeb5, type: 3}
+  m_Name: Third
+  m_EditorClassIdentifier: 
+  ballID: 3
+  ballName: Third
+  ballGameSprite: {fileID: 21300064, guid: 197dc101be73bc64ebf9c4837ee28a15, type: 3}
+  ballUISprite: {fileID: 21300064, guid: 197dc101be73bc64ebf9c4837ee28a15, type: 3}
+  ballSize: 0
+  ballMinSpeed: 10
+  ballMaxSpeed: 10
+  ballMaxBounces: 3

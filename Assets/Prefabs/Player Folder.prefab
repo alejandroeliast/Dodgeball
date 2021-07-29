@@ -184,6 +184,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 31acf416-962e-40ef-a553-52691aa74a19
     m_ActionName: Gameplay/Aim[/XInputControllerWindows/rightStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8928296913991842190}
+        m_TargetAssemblyTypeName: Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnSwitchLeftInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b3dc374d-0e9b-4610-8289-bfd54b6d9aac
+    m_ActionName: Gameplay/SwitchLeft[/Keyboard/q,/XInputControllerWindows/leftShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8928296913991842190}
+        m_TargetAssemblyTypeName: Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnSwitchRightInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: beafe329-173c-4b62-b358-ef63cd5e17d6
+    m_ActionName: Gameplay/SwitchRight[/Keyboard/e,/XInputControllerWindows/rightShoulder]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -651,6 +683,7 @@ MonoBehaviour:
   _launchJoint: {fileID: 8928296913824001204}
   _reticle: {fileID: 8928296914819946057}
   _ballList: []
+  _ballListIndex: 0
 --- !u!1 &8928296914374622495
 GameObject:
   m_ObjectHideFlags: 0
