@@ -1,12 +1,12 @@
 using UnityEngine;
 
-namespace Player
+namespace OldPlayer
 {
     public class PlayerMovement : MonoBehaviour
     {
         #region Variables
         // References
-        [SerializeField] Player _player;
+        [SerializeField] PlayerController _player;
         Rigidbody2D _rigidbody2D;
 
         // Horizontal
@@ -57,7 +57,7 @@ namespace Player
 
         void Start()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<PlayerController>();
             _rigidbody2D = _player.Rigidbody2D;
         }
 

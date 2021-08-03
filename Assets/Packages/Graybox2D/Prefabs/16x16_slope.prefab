@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1208064359462607407}
   - component: {fileID: 8437435020139366587}
   - component: {fileID: 708299595801838797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 16x16_slope
   m_TagString: Untagged
   m_Icon: {fileID: 0}

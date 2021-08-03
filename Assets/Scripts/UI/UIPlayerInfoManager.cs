@@ -24,17 +24,17 @@ public class UIPlayerInfoManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Player.PlayerAction.OnTakeDamage += UpdateHealth;
+        OldPlayer.PlayerAction.OnTakeDamage += UpdateHealth;
 
-        Player.PlayerAction.OnBallThrown += UpdateInventory;
-        Player.PlayerAction.OnBallGrabbed += UpdateInventory;
+        OldPlayer.PlayerAction.OnBallThrown += UpdateInventory;
+        OldPlayer.PlayerAction.OnBallGrabbed += UpdateInventory;
     }
     private void OnDisable()
     {
-        Player.PlayerAction.OnTakeDamage -= UpdateHealth;
+        OldPlayer.PlayerAction.OnTakeDamage -= UpdateHealth;
 
-        Player.PlayerAction.OnBallThrown -= UpdateInventory;
-        Player.PlayerAction.OnBallGrabbed -= UpdateInventory;
+        OldPlayer.PlayerAction.OnBallThrown -= UpdateInventory;
+        OldPlayer.PlayerAction.OnBallGrabbed -= UpdateInventory;
     }
 
     private void UpdateHealth(int index, int health)

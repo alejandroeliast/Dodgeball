@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Player
+namespace OldPlayer
 {
     public class PlayerCollision : MonoBehaviour
     {
         #region Variables
         // Main Player Script reference
-        [SerializeField] Player _player;
+        [SerializeField] PlayerController _player;
 
         // Ground Check
         [Header("Ground Check")]
@@ -38,7 +38,7 @@ namespace Player
 
         void Start()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<PlayerController>();
             _closestLayerMask = LayerMask.GetMask("BallPassive");
         }
 

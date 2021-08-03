@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Player
+namespace OldPlayer
 {
     public class PlayerAction : MonoBehaviour
     {
         // References
-        [SerializeField] Player _player;
+        [SerializeField] PlayerController _player;
 
         [SerializeField] BallController _ballPrefab;
         [SerializeField] GameObject _handJoint;
@@ -34,7 +34,7 @@ namespace Player
 
         private void Start()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<PlayerController>();
             _defaultPrefab = Resources.Load<GameObject>("Prefabs/Ball Throw");
         }
 
@@ -143,6 +143,10 @@ namespace Player
             {
                 print("Died");
             }
+        }
+        void OnDeath()
+        {
+
         }
         #endregion
 

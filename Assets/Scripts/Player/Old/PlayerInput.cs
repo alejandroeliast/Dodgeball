@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Player
+namespace OldPlayer
 {
     public class PlayerInput : MonoBehaviour
     {
         // Player Script Reference
-        [SerializeField] Player _player;
+        [SerializeField] PlayerController _player;
 
         // Movement and Aim
         Vector2 _movementInput;
@@ -17,7 +17,7 @@ namespace Player
 
         void Start()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<PlayerController>();
         }
 
         public void OnMoveInput(InputAction.CallbackContext context)

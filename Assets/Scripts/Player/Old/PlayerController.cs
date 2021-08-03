@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Player
+namespace OldPlayer
 {
-    public class Player : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
 
         [SerializeField] PlayerInput _playerInput;
