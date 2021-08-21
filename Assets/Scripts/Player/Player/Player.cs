@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
         var character = Instantiate(characterPrefab, spawnPosition, Quaternion.identity);
         character.SetController(Controller);
+        character.Index = PlayerNumber;
+        character.Health = 3;
 
         Controller.character = character;
 

@@ -65,8 +65,8 @@ public class CharacterAction : MonoBehaviour
         _childBall = Instantiate(_defaultPrefab, _handJoint.transform.position, Quaternion.Euler(0, 0, randomAngle));
 
         var controller = _childBall.GetComponent<BallController>();
-        controller.HoldStart(_handJoint);
-        controller.BallSetUp(_ballList[0]);
+        controller.Hold.HoldStart(_handJoint.transform);
+        controller.BallSetUp(_ballList[0], character);
 
         _reticle.SetActive(true);
         character.Animator.SetBool("Throw", true);
@@ -84,15 +84,15 @@ public class CharacterAction : MonoBehaviour
             Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = cursorInWorldPos - (Vector2)_launchJoint.transform.position;
             direction.Normalize();
-            controller.Shoot(direction, charge);
+            controller.Shoot.Shoot(direction, charge);
         }
         else
         {
             _aimVector.Normalize();
-            controller.Shoot(_aimVector, charge);
+            controller.Shoot.Shoot(_aimVector, charge);
         }
 
-        controller.HoldEnd();
+        controller.Hold.HoldEnd();
 
         _childBall.transform.parent = null;
         _childBall = null;
@@ -132,20 +132,29 @@ public class CharacterAction : MonoBehaviour
     #endregion
 
     #region Damage
-    public void TakeDamage()
+    public void TakeDamage(Character attacker)
     {
+        if (!character.IsAlive)
+            return;
+
         character.Health--;
 
         OnTakeDamage?.Invoke(character.Index, character.Health);
 
-        if (character.Health <= 0)
-        {
-            print("Died");
-        }
+        if (character.Health <= 0)        
+            OnDeath(attacker);
+        else
+            character.Animator.SetTrigger("Hurt");
     }
-    void OnDeath()
+    void OnDeath(Character attacker)
     {
+        character.gameObject.layer = LayerMask.NameToLayer("Dead");
+        character.IsAlive = false;
+        character.Controller.SetDisabled();
+        character.Animator.SetTrigger("Death");
 
+        var score = FindObjectOfType<ScoreManager>();
+        score?.OnPlayerDeath(character, attacker);
     }
     #endregion
 

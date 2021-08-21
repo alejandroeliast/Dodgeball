@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayTrigger : MonoBehaviour
 {
+    [SerializeField] int sceneToLoad;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var character = collision.GetComponent<Character>();
         if (character == null)
             return;
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

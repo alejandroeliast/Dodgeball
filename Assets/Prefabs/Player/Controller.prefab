@@ -185,6 +185,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: beafe329-173c-4b62-b358-ef63cd5e17d6
     m_ActionName: Gameplay/SwitchRight[/Keyboard/e,/XInputControllerWindows/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6325746449317015022}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: OnPauseInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ec630c94-fe9c-4deb-bd1d-877c7dd6563b
+    m_ActionName: Gameplay/Pause[/Keyboard/escape,/XInputControllerWindows/start,/XInputControllerWindows/start]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

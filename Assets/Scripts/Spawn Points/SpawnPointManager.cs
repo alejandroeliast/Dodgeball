@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnPointManager : MonoBehaviour
 {
-    public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
+    List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
 
     public List<SpawnPoint> SpawnPoints => spawnPoints;
 

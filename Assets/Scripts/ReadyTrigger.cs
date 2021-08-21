@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ReadyTrigger : MonoBehaviour
 {
@@ -22,10 +23,6 @@ public class ReadyTrigger : MonoBehaviour
 
     private IEnumerator LoadArena()
     {
-        print("5");
-        yield return new WaitForSeconds(1f);
-        print("4");
-        yield return new WaitForSeconds(1f);
         print("3");
         yield return new WaitForSeconds(1f);
         print("2");
@@ -33,6 +30,10 @@ public class ReadyTrigger : MonoBehaviour
         print("1");
         yield return new WaitForSeconds(1f);
         print("Loading Arena");
+        var roundManager = FindObjectOfType<RoundManager>();
+        roundManager.SetRoundNumber(5);
+
+        SceneManager.LoadScene(2);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

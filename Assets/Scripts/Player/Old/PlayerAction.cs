@@ -66,7 +66,7 @@ namespace OldPlayer
             _childBall = Instantiate(_defaultPrefab, _handJoint.transform.position, Quaternion.Euler(0, 0, randomAngle));
 
             var controller = _childBall.GetComponent<BallController>();
-            controller.HoldStart(_handJoint);
+            controller.Hold.HoldStart(_handJoint.transform);
             controller.BallSetUp(_ballList[0]);
 
             _reticle.SetActive(true);
@@ -85,15 +85,15 @@ namespace OldPlayer
                 Vector2 cursorInWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 direction = cursorInWorldPos - (Vector2)_launchJoint.transform.position;
                 direction.Normalize();
-                controller.Shoot(direction, charge);
+                controller.Shoot.Shoot(direction, charge);
             }
             else
             {
                 _aimVector.Normalize();
-                controller.Shoot(_aimVector, charge);
+                controller.Shoot.Shoot(_aimVector, charge);
             }
 
-            controller.HoldEnd();
+            controller.Hold.HoldEnd();
 
             _childBall.transform.parent = null;
             _childBall = null;

@@ -54,36 +54,44 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Floating.cs" />
+    <Compile Include="Assets\Scripts\Player\Character\CharacterAction.cs" />
+    <Compile Include="Assets\Scripts\Spawn Points\SpawnPointManager.cs" />
     <Compile Include="Assets\Scripts\Player\Old\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\Player\Old\PlayerAction.cs" />
+    <Compile Include="Assets\Scripts\Ball\BallCollision.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\BallSO.cs" />
+    <Compile Include="Assets\Scripts\Player\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMenu.cs" />
+    <Compile Include="Assets\Scripts\PlayTrigger.cs" />
+    <Compile Include="Assets\Scripts\Ball\BallShoot.cs" />
+    <Compile Include="Assets\Scripts\Player\Controller\Controller.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\PrototypeHero.cs" />
+    <Compile Include="Assets\Scripts\RoundManager.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\ColorSwap\ColorSwap_Prototype.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\Dust_DestroyEvent.cs" />
     <Compile Include="Assets\Scripts\BallDispenser.cs" />
+    <Compile Include="Assets\Scripts\Player\Character\CharacterCollision.cs" />
+    <Compile Include="Assets\Scripts\ReadyTrigger.cs" />
+    <Compile Include="Assets\Scripts\Ball\BallFollow.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\PrototypeHeroAnimEvents.cs" />
     <Compile Include="Assets\Scripts\Player\Old\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\Controller\ControllerManager.cs" />
     <Compile Include="Assets\Scripts\ArrowFollow.cs" />
+    <Compile Include="Assets\Scripts\Spawn Points\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Player\Old\PlayerController.cs" />
     <Compile Include="Assets\Scripts\UI\UIPlayerInfoManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIPlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\Player\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Player\Player\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Ball\IBallBehaviour.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\Sensor_Prototype.cs" />
+    <Compile Include="Assets\Scripts\Player\Character\CharacterMovement.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\AudioManager_PrototypeHero.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Packages\Prototype Hero - Pixel Art\Demo\GrabableLedge.cs" />
+    <Compile Include="Assets\Scripts\Ball\BallHold.cs" />
     <Compile Include="Assets\Scripts\Ball\BallController.cs" />
     <Compile Include="Assets\Scripts\Player\Old\PlayerInput.cs" />
-    <Compile Include="Assets\Scripts\Player\Controller\Controller.cs" />
-    <Compile Include="Assets\Scripts\Player\Controller\ControllerManager.cs" />
-    <Compile Include="Assets\Scripts\Player\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Player\Character\Character.cs" />
-    <Compile Include="Assets\Scripts\Player\Character\CharacterCollision.cs" />
-    <Compile Include="Assets\Scripts\Player\Character\CharacterMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\Character\CharacterAction.cs" />
-    <Compile Include="Assets\Scripts\PlayTrigger.cs" />
-    <Compile Include="Assets\Scripts\Spawn Points\SpawnPointManager.cs" />
-    <Compile Include="Assets\Scripts\Spawn Points\SpawnPoint.cs" />
-    <Compile Include="Assets\Scripts\ReadyTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -746,6 +754,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -772,12 +786,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

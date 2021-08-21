@@ -9,6 +9,8 @@ public class ControllerManager : MonoBehaviour
 
     private List<Controller> controllers = new List<Controller>();
 
+    public List<Controller> Controllers => controllers;
+
     public static ControllerManager Instance { get; private set; }
 
     private void Awake()

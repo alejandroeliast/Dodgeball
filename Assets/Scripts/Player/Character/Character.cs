@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    
-
-
-    public UIPlayerInfo _playerUI;
+    //public UIPlayerInfo _playerUI;
 
     public int Index { get; set; }
     public int Health { get; set; }
+    public bool IsAlive { get; set; }
+
     public Controller Controller { get; private set; }
     public CharacterMovement Movement { get; private set; }
     public CharacterCollision Collision { get; private set; }
@@ -33,6 +32,9 @@ public class Character : MonoBehaviour
 
         Action = GetComponent<CharacterAction>();
         Action.Initialize(this);
+
+        Health = 3;
+        IsAlive = true;
     }
     void Start()
     {
