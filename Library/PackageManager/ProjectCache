@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637636243590876494
-    m_Hash: 712489381
+      ticks: 637654188644628731
+    m_Hash: 314927903
   m_LockFileStatus:
     m_FilePath: D:/GitHub/Dodgeball/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637636243591381376
-    m_Hash: 1384806556
+      ticks: 637654188832862045
+    m_Hash: 3675470433
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.2d.animation@5.0.5
+    - packageId: com.unity.2d.animation@5.0.6
       testable: 0
       isDirectDependency: 1
-      version: 5.0.5
+      version: 5.0.6
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.animation@5.0.5
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.animation@5.0.6
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -77,6 +77,8 @@ m_PackageAssets:
         - 3.2.5
         - 3.2.6
         - 3.2.9
+        - 3.2.10
+        - 3.2.11
         - 4.0.0
         - 4.0.1
         - 4.1.0
@@ -95,17 +97,19 @@ m_PackageAssets:
         - 5.0.4
         - 5.0.5
         - 5.0.6
+        - 5.0.7
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
         - 6.0.3
         - 6.0.4
+        - 6.0.5
         - 7.0.0-pre.2
         - 7.0.0-pre.3
         compatible:
-        - 5.0.5
         - 5.0.6
-        verified: 5.0.6
+        - 5.0.7
+        verified: 5.0.7
       dependencies:
       - name: com.unity.2d.common
         version: 4.0.3
@@ -151,13 +155,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637568738450000000
+      datePublishedTicks: 637594727470000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 03eb2fe90133273bcb1bd74654bdc02023cdfc7f
+        revision: 9e7fd5cbe078d004f1e87ecdf3b57436664a690a
         path: 
     - packageId: com.unity.2d.pixel-perfect@4.0.1
       testable: 0
@@ -203,6 +207,7 @@ m_PackageAssets:
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.0
+        - 5.0.1
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -233,12 +238,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/2d.git
         revision: 7d7470f4ca0ea8353d4c9640b3b6ae9d1ebd9c1d
         path: 
-    - packageId: com.unity.2d.psdimporter@4.0.2
+    - packageId: com.unity.2d.psdimporter@4.1.0
       testable: 0
       isDirectDependency: 1
-      version: 4.0.2
+      version: 4.1.0
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.psdimporter@4.1.0
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -296,14 +301,13 @@ m_PackageAssets:
         - 6.0.0-pre.3
         - 6.0.0-pre.4
         compatible:
-        - 4.0.2
         - 4.1.0
-        verified: 4.0.2
+        verified: 4.1.0
       dependencies:
       - name: com.unity.2d.common
-        version: 4.0.2
+        version: 4.0.3
       - name: com.unity.2d.animation
-        version: 5.0.2
+        version: 5.0.6
       - name: com.unity.2d.sprite
         version: 1.0.0
       resolvedDependencies:
@@ -322,7 +326,7 @@ m_PackageAssets:
       - name: com.unity.modules.uielementsnative
         version: 1.0.0
       - name: com.unity.2d.animation
-        version: 5.0.5
+        version: 5.0.6
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.modules.animation
@@ -343,13 +347,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637366443480000000
+      datePublishedTicks: 637594727750000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 4e96f68a7587d87b4fee15d6f88a5d86c2afa9aa
+        revision: 9e7fd5cbe078d004f1e87ecdf3b57436664a690a
         path: 
     - packageId: com.unity.2d.sprite@1.0.0
       testable: 0
@@ -402,12 +406,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.2d.spriteshape@5.1.2
+    - packageId: com.unity.2d.spriteshape@5.1.3
       testable: 0
       isDirectDependency: 1
-      version: 5.1.2
+      version: 5.1.3
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.spriteshape@5.1.2
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.2d.spriteshape@5.1.3
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -455,6 +459,7 @@ m_PackageAssets:
         - 3.0.14
         - 3.0.15
         - 3.0.16
+        - 3.0.17
         - 4.0.0
         - 4.0.1
         - 4.0.2
@@ -472,6 +477,7 @@ m_PackageAssets:
         - 5.1.1
         - 5.1.2
         - 5.1.3
+        - 5.1.4
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.0
@@ -479,9 +485,9 @@ m_PackageAssets:
         - 7.0.0-pre.2
         - 7.0.0-pre.3
         compatible:
-        - 5.1.2
         - 5.1.3
-        verified: 5.1.3
+        - 5.1.4
+        verified: 5.1.4
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0
@@ -531,13 +537,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637568738720000000
+      datePublishedTicks: 637594728080000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 03eb2fe90133273bcb1bd74654bdc02023cdfc7f
+        revision: 9e7fd5cbe078d004f1e87ecdf3b57436664a690a
         path: 
     - packageId: com.unity.2d.tilemap@1.0.0
       testable: 0
@@ -647,6 +653,7 @@ m_PackageAssets:
         - 2.6.3
         - 2.6.4
         - 2.6.5
+        - 2.6.9
         - 2.7.1
         - 2.7.2
         - 2.7.3
@@ -671,6 +678,7 @@ m_PackageAssets:
         - 2.6.3
         - 2.6.4
         - 2.6.5
+        - 2.6.9
         - 2.7.1
         - 2.7.2
         - 2.7.3
@@ -680,7 +688,7 @@ m_PackageAssets:
         - 2.8.0-exp.2
         - 2.8.0-pre.1
         - 2.8.0
-        verified: 2.6.5
+        verified: 2.6.9
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -726,12 +734,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
         revision: c12b97ec35ab5091c685e729b76980a69a6d39a1
         path: 
-    - packageId: com.unity.collab-proxy@1.5.7
+    - packageId: com.unity.collab-proxy@1.7.1
       testable: 0
       isDirectDependency: 1
-      version: 1.5.7
+      version: 1.7.1
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.collab-proxy@1.5.7
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.collab-proxy@1.7.1
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -770,6 +778,8 @@ m_PackageAssets:
         - 1.5.7
         - 1.6.0
         - 1.7.1
+        - 1.8.0
+        - 1.9.0
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -781,8 +791,9 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.5.7
-        - 1.6.0
+        - 1.7.1
+        - 1.8.0
+        - 1.9.0
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -793,7 +804,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.5.7
+        verified: 1.7.1
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
@@ -801,16 +812,19 @@ m_PackageAssets:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
       keywords:
-      - vsc
-      - version
-      - control
-      - collab
-      - collaboration
-      - collaborate
-      - teams
-      - team
-      - cloud
       - backup
+      - cloud
+      - collab
+      - collaborate
+      - collaboration
+      - control
+      - plastic
+      - plasticscm
+      - source
+      - team
+      - teams
+      - version
+      - vcs
       registry:
         id: main
         name: 
@@ -823,13 +837,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637551413290000000
+      datePublishedTicks: 637616921650000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: f079d307344f568804d3ea6d781013135e614e45
+        revision: 30ef59f552633de9ff0401db4e73ac89982d4ac0
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -910,7 +924,7 @@ m_PackageAssets:
         version: 1.1.1
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.26
+        version: 1.1.27
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -938,12 +952,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.9
+    - packageId: com.unity.ide.visualstudio@2.0.11
       testable: 0
       isDirectDependency: 1
-      version: 2.0.9
+      version: 2.0.11
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.ide.visualstudio@2.0.9
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -997,7 +1011,7 @@ m_PackageAssets:
         version: 1.1.9
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.26
+        version: 1.1.27
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -1017,13 +1031,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637580705480000000
+      datePublishedTicks: 637613656180000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: c7cd4c6319806423b3d918b3e9599244e3993d41
+        revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
@@ -1140,6 +1154,7 @@ m_PackageAssets:
         - 1.0.1
         - 1.0.2
         - 1.1.0-pre.5
+        - 1.1.0-pre.6
         - 1.1.0-preview.1
         - 1.1.0-preview.2
         - 1.1.0-preview.3
@@ -1169,6 +1184,7 @@ m_PackageAssets:
         - 1.0.1
         - 1.0.2
         - 1.1.0-pre.5
+        - 1.1.0-pre.6
         - 1.1.0-preview.1
         - 1.1.0-preview.2
         - 1.1.0-preview.3
@@ -1204,12 +1220,12 @@ m_PackageAssets:
         url: git+https://github.com/Unity-Technologies/InputSystem.git
         revision: 041def76515febb36a83d1f928cfb7aefb85176c
         path: 
-    - packageId: com.unity.test-framework@1.1.26
+    - packageId: com.unity.test-framework@1.1.27
       testable: 0
       isDirectDependency: 1
-      version: 1.1.26
+      version: 1.1.27
       source: 1
-      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.test-framework@1.1.26
+      resolvedPath: D:\GitHub\Dodgeball\Library\PackageCache\com.unity.test-framework@1.1.27
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1254,10 +1270,11 @@ m_PackageAssets:
         - 1.1.24
         - 1.1.26
         - 1.1.27
+        - 1.1.29
         compatible:
-        - 1.1.26
         - 1.1.27
-        verified: 1.1.27
+        - 1.1.29
+        verified: 1.1.29
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -1287,13 +1304,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637576439750000000
+      datePublishedTicks: 637594751620000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: ea9d07e64e6d63c4f2fd8b6bc57df0f452ff4fae
+        revision: c2f2cc9b7ea61d42964257363595dff5e8c47c42
         path: 
     - packageId: com.unity.textmeshpro@3.0.6
       testable: 0
@@ -1373,6 +1390,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.5.5
         - 1.5.6
+        - 1.6.0-preview.1
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -1394,6 +1412,7 @@ m_PackageAssets:
         - 2.1.4
         - 2.1.5
         - 2.1.6
+        - 2.2.0-preview.1
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -1411,8 +1430,10 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.2.0-pre.1
         compatible:
         - 3.0.6
+        - 3.2.0-pre.1
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -1535,6 +1556,7 @@ m_PackageAssets:
         - 1.6.0-pre.4
         - 1.6.0-pre.5
         - 1.6.1
+        - 1.6.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1555,6 +1577,7 @@ m_PackageAssets:
         - 1.6.0-pre.4
         - 1.6.0-pre.5
         - 1.6.1
+        - 1.6.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -3659,7 +3682,6 @@ m_PackageAssets:
         - 6.0.0-pre.3
         - 6.0.0-pre.4
         compatible:
-        - 4.0.2
         - 4.0.3
         verified: 4.0.3
       dependencies:
@@ -3732,17 +3754,20 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.6
         - 2.1.0
+        - 2.1.1
         - 3.0.0
         - 3.0.1
         - 3.0.2
         - 4.0.0
         - 4.0.1
+        - 4.0.2
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.0
         compatible:
         - 4.0.1
-        verified: 4.0.1
+        - 4.0.2
+        verified: 4.0.2
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -3771,4 +3796,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: D:/GitHub/Dodgeball/Packages
-m_EditorVersion: 2020.3.13f1 (71691879b7f5)
+m_EditorVersion: 2020.3.16f1 (049d6eca3c44)
